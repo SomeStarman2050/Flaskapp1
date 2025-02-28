@@ -3,7 +3,7 @@ from flask import Flask
 app = Flask(__name__)
 app.config['DEBUG'] = True
 
-@app.route('/')
+@app.route('/hello')
 def hello():
    message = "Hello, Flask!"
    return message
